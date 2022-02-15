@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <Seo title="Home" />
     <div>
-      <h1>随便聊聊</h1>
+      <h1>小说随笔</h1>
       <div>
         {
           data.allMarkdownRemark.edges.map(({ node }) => (            
@@ -48,7 +48,7 @@ export default IndexPage;
 export const query = graphql`
 {
   allMarkdownRemark(
-    filter: {frontmatter: {category: {ne: "novel"}}}
+    filter: {frontmatter: {category: {eq: "novel"}}}
     sort: {fields: [frontmatter___date], order: DESC}
   ) {
     edges {
