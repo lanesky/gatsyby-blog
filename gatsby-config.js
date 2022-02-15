@@ -3,7 +3,7 @@ module.exports = {
     title: `Keyun Shang's Blog`,
     description: `我是一个IT工程师，在此博客随便聊聊。`,
     author: `Keyun Shang`,
-    siteUrl: `TBD`,
+    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
